@@ -1,4 +1,4 @@
-from data.colors import *
+from data.c_colors import *
 
 
 def do_door_closed(hero, obj_x, obj_y):
@@ -24,18 +24,18 @@ def do_treasure(hero, obj_x, obj_y):
 
 
 GAME_OBJECTS = [
-    {"label": "Hero", "char": "H", "icon": BLUE('ⵅ'), "passable": True, "interactive": False, "do": None},
-    {"label": "Wall", "char": "#", "icon": DARK_GRAY('▓'), "passable": False, "interactive": False, "do": None},
-    {"label": "Door_open", "char": "/", "icon": BLUE('☖'), "passable": True, "interactive": False, "do": None},
-    {"label": "Door_closed", "char": "|", "icon": BLUE('☗'), "passable": False, "interactive": True,
+    {"label": "Hero", "char": "H", "icon": BLUE('H'), "passable": True, "interactive": False, "do": None},
+    {"label": "Wall", "char": "#", "icon": DARK_GRAY('#'), "passable": False, "interactive": False, "do": None},
+    {"label": "Door_open", "char": "/", "icon": MAGENTA('/'), "passable": True, "interactive": False, "do": None},
+    {"label": "Door_closed", "char": "|", "icon": MAGENTA('|'), "passable": False, "interactive": True,
      "do": do_door_closed},
-    {"label": "Key", "char": "k", "icon": GREEN("⚷"), "passable": True, "interactive": True,
+    {"label": "Key", "char": "k", "icon": GREEN("k"), "passable": True, "interactive": True,
      "do": do_key},
     {"label": "Heal", "char": "e", "icon": RED("♥"), "passable": True, "interactive": True,
      "do": do_heal},
-    {"label": "Treasure", "char": "t", "icon": LIGHT_YELLOW("ⴲ"), "passable": True, "interactive": True,
+    {"label": "Treasure", "char": "t", "icon": LIGHT_YELLOW("T"), "passable": True, "interactive": True,
      "do": do_treasure},
-    {"label": "Clover", "char": "c", "icon": GREEN("☘"), "passable": True, "interactive": True,
+    {"label": "Clover", "char": "c", "icon": GREEN("A"), "passable": True, "interactive": True,
      "do": do_treasure},
 ]
 

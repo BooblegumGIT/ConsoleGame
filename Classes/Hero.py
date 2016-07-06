@@ -9,10 +9,10 @@ class Hero(GameObject):
         GameObject.__init__(self, char, field)
 
         self.name = "Knight"
-        self.keys = CharParam(value=0, max_value=4, unicode="⚷", empty_unicode="◯")
-        self.lives = CharParam(value=3, max_value=4, unicode="♥", empty_unicode="♡")
+        self.keys = CharParam(value=1, max_value=4, unicode="+", empty_unicode="0")
+        self.lives = CharParam(value=3, max_value=4, unicode="♥", empty_unicode="O")
 
-    def events(self, key):
+    def event(self, key):
         if key == 'a':
             dir = LEFT
         elif key == 'd':

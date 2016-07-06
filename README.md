@@ -16,12 +16,12 @@ http://unicode-table.com/ru/#miscellaneous-symbols
 ⵅ♡♥
 〠
 ꙮ
+◈
 о꙰
 ᙚ
 ䷀䷿䷩䷜䷁▓ - Walls
 
 ⚔⚒⚖⚕⚙
-◈
 
 ## Цвета и стили консоли:
 http://misc.flogisoft.com/bash/tip_colors_and_formatting
